@@ -6,8 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
-  <body x-data="example">
-    <h1 class="">HELLO WORLD</h1>
+  <body>
+    <div
+      x-data="webgl"
+      class="webgl-canvas fixed inset-0 -z-10"
+    >
+      <canvas x-ref="stage" id="webgl-canvas" class="webgl-canvas__body w-full h-full"></canvas>
+    </div>
+
+    <div class="container mx-auto">
+      <ul class="w-[62.5%] mx-auto py-[180px]">
+        <li class="w-full h-auto [&:not(:first-of-type)]:mt-[180px]">
+          <a href="/" class="block w-full h-[500px]">
+            <img src="/public/member-1.jpg" alt="" class="w-full h-full object-cover">
+          </a>
+        </li>
+        <li class="w-full h-auto [&:not(:first-of-type)]:mt-[180px]">
+          <a href="/" class="block w-full h-[500px]">
+            <img src="/public/member-2.jpg" alt="" class="w-full h-full object-cover">
+          </a>
+        </li>
+        <li class="w-full h-auto [&:not(:first-of-type)]:mt-[180px]">
+          <a href="/" class="block w-full h-[500px]">
+            <img src="/public/member-3.jpg" alt="" class="w-full h-full object-cover">
+          </a>
+        </li>
+        <li class="w-full h-auto [&:not(:first-of-type)]:mt-[180px]">
+          <a href="/" class="block w-full h-[500px]">
+            <img src="/public/member-4.jpg" alt="" class="w-full h-full object-cover">
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
