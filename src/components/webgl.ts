@@ -22,7 +22,7 @@ export default () => {
         // スクロール位置を取得
         targetScrollY = document.documentElement.scrollTop;
         // リープ関数でスクロール位置をなめらかに追従
-        currentScrollY = lerp(currentScrollY, targetScrollY, 0.1);
+        currentScrollY = lerp(currentScrollY, targetScrollY, 0.08);
 
         scrollOffset = targetScrollY - currentScrollY;
     };
